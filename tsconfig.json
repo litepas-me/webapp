@@ -21,6 +21,10 @@
       "dom"
     ]
   },
+  "paths": {
+    "app": "./src/app",
+    "assets": "./assets"
+  },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,

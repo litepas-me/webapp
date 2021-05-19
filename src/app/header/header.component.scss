@@ -1,0 +1,41 @@
+$button-color: purple;
+$button-focus-color: darkmagenta;
+
+@keyframes button-focus {
+  from {background-color: $button-color;}
+  to {background-color: $button-focus-color;}
+}
+
+@keyframes button-initial {
+  from {background-color: $button-focus-color;}
+  to {background-color: $button-color;}
+}
+
+.header {
+  padding: 0.8em;
+  padding-left: 0;
+  background-color: purple;
+
+  .button {
+    animation: button-initial 0.5s normal;
+    -webkit-animation: button-initial 0.5s normal;
+
+    padding: 0.5em;
+    background-color: $button-color;
+
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+
+    text-anchor: middle;
+    color: white;
+    font-size: x-large;
+    font-family: sans-serif;
+  }
+
+  .button:hover {
+    animation: button-focus 0.5s normal;
+    -webkit-animation: button-focus 0.5s normal;
+    background-color: $button-focus-color;
+  }
+
+}
